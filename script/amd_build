@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 
-git submodule update --checkout
 cd zepto
 npm install
 npm run-script dist
