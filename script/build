@@ -1,9 +1,11 @@
 #!/usr/bin/env sh
 
-cd zepto
+npm install https://github.com/mscienski/zepto#v1.1.8
+cd node_modules/zepto
 npm install
 npm run-script dist
-cd ..
+cd ../..
+cp -r node_modules/zepto ./zepto
 
 if [ -f index.js ]; then
   rm index.js;
