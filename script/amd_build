@@ -5,9 +5,10 @@ cd node_modules/zepto
 npm install
 npm run-script dist
 cd ../..
+cp -r node_modules/zepto ./zepto
 
 if [ -f index.js ]; then
   rm index.js;
 fi
 
-cat node_modules/zepto/dist/zepto.js _amd_index.js > index.js
+cat zepto/dist/zepto.js _amd_index.js > index.js
