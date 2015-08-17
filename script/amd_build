@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-npm install https://github.com/mscienski/zepto@1.1.9
+npm install https://github.com/mscienski/zepto#v1.1.9
 cd node_modules/zepto
 npm install
 npm run-script dist
